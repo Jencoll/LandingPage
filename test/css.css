@@ -1,0 +1,370 @@
+/* Universal */
+
+html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1 {
+    font-family: 'Cormorant', serif;
+    font-size: 60px;
+    color: #35401b;
+}
+
+h2 {
+    font-family: 'Cormorant', serif;
+    text-align: center;
+    font-size: 40px;
+    color: #35401b;
+    margin: 1.8rem 0;
+}
+
+h3 {
+    font-family: 'Cormorant', serif;
+    text-align: left;
+    font-size: 32px;
+    color: #ffffff;
+    max-width: 65%;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    padding-left: 1rem;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100%;
+}
+
+/* Header */ 
+
+header {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 10001;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #7F9756;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#header a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 18px;
+}
+
+#logo {
+    margin: 1rem;
+}
+
+#header-img {
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+#logo a {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #ffffff; /* 35401b */
+}
+
+#logo img {
+    padding-right: 22px;
+}
+
+.nav-bar {
+    margin: 1rem;
+    line-height: 0;
+}
+
+ul {
+    vertical-align: baseline;
+}
+
+#menu-nav li {
+    display: inline-block;
+    font-size: 18px;
+    padding-right: 2rem;
+    list-style: none;
+    color: #ffffff;
+}
+
+/* Main content */ 
+
+main {
+    margin-top: 30px;
+    margin: 0 auto;
+    padding: 5rem 0;
+    padding-bottom: 15rem;
+}
+
+.wrap {
+    height: 600px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+.section-wrap {
+    display: flex;
+}
+
+.section-container {
+    display: inline-flex;
+    margin: 1rem auto;
+    background-color: white;
+}
+
+.card {
+    margin: 1rem 2.5rem;
+    background-color: #7F9756;
+    text-align: center;
+    border-radius: 5px 200px 3px 200px;
+    height: 375px;
+    position: relative;
+    width: 380px;
+    color: #efefef;
+}
+
+/* Featured section */
+
+#featured-section {
+    background-image: url(Resources/2542590_2500px.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.text-block {
+    display: flex;
+    width: 50%;
+    margin: 0 66%;
+}
+
+.presentation-text {
+    max-width: 30em;
+    float: right;
+    margin-top: 7%;
+}
+
+.presentation-text p {
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .presentation-text {
+        max-width: 18em;
+    }
+
+    h1 {
+        max-width: 75%;
+        font-size: 40px;
+    }    
+}
+
+@media only screen and (max-width: 900px) {
+    .text-block {
+        margin: 0 50%;
+        max-width: 40%;
+    }        
+}
+
+/* Product section */
+
+.product-list {
+    max-width: 60%;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.product-list li {
+    text-align: start;
+    list-style-image: url(Resources/beet_blanc.svg);
+}
+
+.product-button {
+    position: absolute;
+    padding:1.5rem;
+    border-radius: 5px 300px 3px 300px;
+    border-style: solid;
+    bottom: 15px;
+    right: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #35401b;
+    background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(127,151,86, 0.7));
+}
+
+.product-desc {
+    max-width: 80%;
+}
+
+/* Basket section */
+
+figure {
+    max-width: 560px;
+    max-height: 374px;
+    border: 0.5rem outset rgba(127, 151, 86, 1);
+    border-radius: 0.8rem;
+    background-color: rgba(127, 151, 86, 0.4)
+}
+
+figcaption {
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+
+table {
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+td {
+    padding-right: 1.2rem;
+    font-size: 14px;
+}
+
+th {
+    text-align: left;
+}
+
+.text {
+    margin: 0 1rem;
+    max-width: 50%;
+}
+
+/* Forfaits */
+
+#order-container, #order-wrap, #order {
+    background-image: url(Resources/Fond.png);
+}
+
+span {
+    color: #ffffff;
+}
+
+.description {
+    max-width: 60%;
+    margin: 1rem auto;
+    font-weight: 500;
+    text-align: center;
+    font-size: 15px;
+    padding-left: 0;
+}
+
+/* Footer */
+
+footer {
+    position: absolute;
+    display: inline-flex;
+    bottom: 0;
+    width: 100%;
+    height: 15rem;
+    background-color: #7F9756;
+}
+
+i {
+    padding-right: .5rem;
+}
+
+.contact {
+    padding: 2rem;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-info {
+    padding: 0 2rem;
+}
+
+.contact-info p {
+    color: #ffffff;
+    margin: 0;
+    padding-left: 0;
+}
+
+.contact-info a {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+
+.social-networks {
+    margin-top: 1.2rem;
+}
+
+form {
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+label {
+    max-width: 35px;
+}
+
+input {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+}
+
+.newsletter {
+    display: block;
+    max-width: 30%;
+}
+
+.newsletter a {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.newsletter p {
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    color: #ffffff;
+}
+
+.submit {
+    padding: 0;
+    vertical-align: middle;
+    border-radius: 5px;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: rgba(127, 151, 86, 1);
+    line-height: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: rgba(127, 151, 86, 0.4);
+}
+
+.email-img {
+    max-width: 32px;
+    max-height: 32px;
+}
