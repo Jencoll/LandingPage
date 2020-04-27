@@ -1,0 +1,60 @@
+/* Header for Mobile */
+
+@media only screen and (max-width: 900px) {
+
+    main {
+        padding: 7rem 0;
+    }
+    
+    #logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-bar {
+        display: none;
+    }
+
+    .mobile-bar {
+        margin: 1rem;
+        line-height: 0;
+        display: flex;
+    }
+
+    .mobile-bar ul {
+        display: inline-flex;
+        list-style-type: none;
+        justify-content: space-between;
+    }
+
+    .mobile-bar li {
+        padding: 0.5rem;
+    }
+
+   .mobile-bar img {
+       width: 2rem;
+       height: 2rem;
+   }
+
+
+}
+
+/* Featured section for Mobile */
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .presentation-text {
+        max-width: 18em;
+    }
+
+    h1 {
+        max-width: 75%;
+        font-size: 40px;
+    }    
+}
+
+@media only screen and (max-width: 900px) {
+    .text-block {
+        max-width: 40%;
+    }        
+}

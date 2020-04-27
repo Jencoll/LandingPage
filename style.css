@@ -5,6 +5,7 @@ html {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     max-width: 1900px;
+    min-width: fit-content;
 }
 
 body {
@@ -44,6 +45,11 @@ p {
     padding-left: 1rem;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 #page-container {
     position: relative;
     min-height: 100%;
@@ -61,11 +67,7 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: #7F9756;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
+    max-width: 1900px;
 }
 
 #header a {
@@ -79,12 +81,6 @@ a {
     margin: 1rem;
 }
 
-#header-img {
-    width: 40px;
-    height: 40px;
-    float: left;
-}
-
 #logo a {
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
@@ -94,11 +90,18 @@ a {
 
 #logo img {
     padding-right: 22px;
+    width: 40px;
+    height: 40px;
+    float: left;
 }
 
 .nav-bar {
     margin: 1rem;
     line-height: 0;
+}
+
+.mobile-bar {
+    display: none;
 }
 
 ul {
@@ -175,24 +178,6 @@ main {
 
 .presentation-text p {
     font-size: 15px;
-}
-
-@media only screen and (min-width: 900px) and (max-width: 1200px) {
-    .presentation-text {
-        max-width: 18em;
-    }
-
-    h1 {
-        max-width: 75%;
-        font-size: 40px;
-    }    
-}
-
-@media only screen and (max-width: 900px) {
-    .text-block {
-        margin: 0 50%;
-        max-width: 40%;
-    }        
 }
 
 /* Product section */
