@@ -11,6 +11,10 @@
         align-items: center;
         justify-content: center;
     }
+
+    #header {
+        background-color: lavender;
+    }
     
     .nav-bar {
         display: none;
