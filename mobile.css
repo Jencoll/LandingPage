@@ -1,6 +1,6 @@
 /* Header for Mobile */
 
-@media only screen and (max-resolution: 520dpi) {
+@media only screen and (max-resolution: 720dpi) {
 
     main {
         padding: 7rem 0;
