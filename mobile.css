@@ -1,6 +1,6 @@
 /* Header for Mobile */
 
-@media only screen and (max-resolution: 720dpi) {
+@media only screen and (max-width: 900px) {
 
     main {
         padding: 7rem 0;
@@ -10,10 +10,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    header {
-        background-color: lavender;
     }
     
     .nav-bar {
@@ -41,6 +37,30 @@
        height: 2rem;
    }
 
+   #featured-section {
+       background-image: url(Resources/pousse_mobile.jpg);
+   }
+
+   .text-block {
+       float: left;
+       margin: 4em;
+   }
+
+   .presentation-text {
+       margin-top: 20%;
+   }
+
+   h1 {
+       font-size: 86px;
+   }
+
+   h2 {
+       font-size: 76px;
+   }
+
+   .introduction {
+       display: none;
+   }
 
 }
 
